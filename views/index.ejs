@@ -1,0 +1,22 @@
+    <% items.forEach(function(el,index)
+    { %>
+    <div>
+        <td><%= el.id %></td>
+        <td><%= el.sku %></td>
+        <td><%= el.description%></td>
+        <td><%= el.onorder%></td>
+        <td><%= el.instock%></td>
+        <td><%= el.cost%></td>
+        <td><%= el.totalcost%></td>
+        <td><%= el.price%></td>
+        <td><%= el.totalprice%></td>
+
+        <td><a href="#" class="editItem"   itemID="<%= el.id%>" >Edit</a></td>
+        <td><a href="#" class="deleteItem" itemID="<%= el.id%>" >Delete</a></td>
+        <td><a href="#" class="findStore"  itemID="<%= el.id%>" >Find Store</a></td>
+
+    </div>
+
+    <% });  %>
+
+
