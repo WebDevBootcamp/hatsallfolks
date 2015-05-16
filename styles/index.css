@@ -1,0 +1,16 @@
+#content {
+    margin: 20px auto;
+    width: 60%;
+}
+
+.hats {
+    float: left
+}
+
+img {
+    padding: 50px;
+}
+
+.row {
+    overflow: hidden;
+}
