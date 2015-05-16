@@ -1,10 +1,3 @@
-//<!DOCTYPE html>
-//<html>
-//<head lang="en">
-//    <meta charset="UTF-8">
-//    <title></title>
-//</head>
-//<body>
 <?php
     include('db.php');
     $conn = db_connect();
@@ -13,18 +6,13 @@
     $sql = "SELECT sku, product, description FROM Inventory WHERE size='small'";
     $result = $conn->query($sql);
 
-    // THE CODE BELOW RENDERS THE SQL RESULTS AS HTML ON THE PAGE IN CASE YOU WANT TO USE ANY OF THIS IN YOUR EJS CONSTRUCTOR
-    if ($result->num_rows > 0) {
-         // OUTPUT DATA FOR EACH ROW
-         while($row = $result->fetch_assoc()) {
-            // ECHO BELOW CAN BE DELETED WHEN AJAC FETCH IS SET UP
-             echo "<br /><img src=\"../images/".$row["sku"].".jpg\">
-             <br /> SKU: ". $row["sku"]. "<br /> Product: ". $row["product"]. "<br />Description: ". $row["description"]."<br />";
-         }
-    } else {
-         echo "0 results";
-    }
+    // MAKE RETURN TO SEND ARRAY OF $RESULT TO JSON FOR JACK
+      $items = [];
+      while($row = $result->fetch_assoc())
+      {
+          $items[] = $row["sku"]. $row["product"].$row["description"];
+      }
+
+    print json_encode($items);
     $conn->close();
-    ?>
-</body>
-</html>
+?>

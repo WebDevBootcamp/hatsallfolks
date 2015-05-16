@@ -24,6 +24,7 @@
              echo "<br /><img src=\"../images/".$row["sku"].".jpg\">
              <br /> SKU: ". $row["sku"]. "<br /> Product: ". $row["product"]. "<br />Description: ". $row["description"]."<br />Quantity: ". $row["quantity"]."<br />";
              // SQL QUERY BELOW DETERMINES HAT COLORS FOR THE PARTICULAR PRODUCT
+             // ADD PRICE TO QUERY ABOVE
              $hat = $row["product"];
              $colors = "SELECT color FROM Inventory WHERE product = ('$hat') AND (size = 'small')";
              $hatColors = $conn->query($colors);
