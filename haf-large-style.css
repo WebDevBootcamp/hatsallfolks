@@ -1,3 +1,179 @@
+* { 
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+
+
+body {
+	color:#9d9e9f;
+	font-size: 14px;
+	background-color: white;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+ul {
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+/*select {
+	color:#9d9e9f;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	text-align: right;
+}*/
+
+a:link {
+	text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+a:visited {
+	text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+a:hover {
+	text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+a:active {
+	text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+
+.container-wrap {
+	/*width: 880px;*/
+	/*background-color: white;*/
+	/*height:100vh;*/
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.gradient {
+	background: #003040; /* Old browsers */
+	background: -moz-linear-gradient(top,  #003040 0%, #216e87 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#003040), color-stop(100%,#216e87)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #003040 0%,#216e87 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #003040 0%,#216e87 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #003040 0%,#216e87 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #003040 0%,#216e87 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003040', endColorstr='#216e87',GradientType=0 ); /* IE6-9 */
+	position: relative;
+}
+
+.gradient-reverse {
+	background: #216e87; /* Old browsers */
+	background: -moz-linear-gradient(top,  #216e87 0%, #003040 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#216e87), color-stop(100%,#003040)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #216e87 0%,#003040 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #216e87 0%,#003040 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #216e87 0%,#003040 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #216e87 0%,#003040 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#216e87', endColorstr='#003040',GradientType=0 ); /* IE6-9 */
+	position: relative;
+}
+
+.gradient-orange {
+	background: #f38931; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f38931 0%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f38931), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f38931 0%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f38931 0%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f38931 0%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f38931 0%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f38931', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-red-org-gray {
+	background: #ce492b; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ce492b 22%, #ce492b 22%, #f38931 45%, #f38931 67%, #dddddd 98%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,#ce492b), color-stop(22%,#ce492b), color-stop(45%,#f38931), color-stop(67%,#f38931), color-stop(98%,#dddddd)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ce492b 22%,#ce492b 22%,#f38931 45%,#f38931 67%,#dddddd 98%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ce492b 22%,#ce492b 22%,#f38931 45%,#f38931 67%,#dddddd 98%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ce492b 22%,#ce492b 22%,#f38931 45%,#f38931 67%,#dddddd 98%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ce492b 22%,#ce492b 22%,#f38931 45%,#f38931 67%,#dddddd 98%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ce492b', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-green {
+	background: #427542; /* Old browsers */
+	background: -moz-linear-gradient(top,  #427542 0%, #006d14 42%, #004904 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#427542), color-stop(42%,#006d14), color-stop(100%,#004904)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #427542 0%,#006d14 42%,#004904 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #427542 0%,#006d14 42%,#004904 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #427542 0%,#006d14 42%,#004904 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #427542 0%,#006d14 42%,#004904 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#427542', endColorstr='#004904',GradientType=0 ); /* IE6-9 */
+}
+
+.gradient-gray {
+	background: #e5e7e8; /* Old browsers */
+	background: -moz-linear-gradient(top,  #e5e7e8 0%, #9d9e9f 64%, #6f6f70 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e7e8), color-stop(64%,#9d9e9f), color-stop(100%,#6f6f70)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #e5e7e8 0%,#9d9e9f 64%,#6f6f70 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #e5e7e8 0%,#9d9e9f 64%,#6f6f70 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #e5e7e8 0%,#9d9e9f 64%,#6f6f70 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #e5e7e8 0%,#9d9e9f 64%,#6f6f70 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e7e8', endColorstr='#6f6f70',GradientType=0 ); /* IE6-9 */
+}
+
+
+.gradient-gray-reverse {
+	background: #6f6f70; /* Old browsers */
+	background: -moz-linear-gradient(top,  #6f6f70 0%, #9d9e9f 36%, #e5e7e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6f6f70), color-stop(36%,#9d9e9f), color-stop(100%,#e5e7e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #6f6f70 0%,#9d9e9f 36%,#e5e7e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #6f6f70 0%,#9d9e9f 36%,#e5e7e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #6f6f70 0%,#9d9e9f 36%,#e5e7e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #6f6f70 0%,#9d9e9f 36%,#e5e7e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6f6f70', endColorstr='#e5e7e8',GradientType=0 ); /* IE6-9 */
+}
+
+.clear {
+		   clear: both;
+		}
+
+.center {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.test1 {
+	background-color: #dddddd;
+	font-size: 5.9vw;
+	height: 200px;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 720px;
+	text-align: center;
+	color: white;
+	font-style: uppercase;
+	margin-top: 5%;
+}
+
+.space-at-bottom {
+	height: 20px;
+	background-color: gray;
+}
+/* Above styles were originally in the "haf-base-styles.css"
+
+
+
 /* Large-Default-Version of CSS */
 
 .upper-gradient-container {
@@ -6,15 +182,45 @@
 	margin: 0 auto;
 	width: 100%;
 	display: block;
+	padding-top: 5px;
+}
+
+.small-header-logo {
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	margin-top: 15px;
+	margin-left: 8px;
+}
+
+.header-links {
+	height: 20px;
+	display: inline-block;
+	float: right;
+	margin: 0 auto;
+	position: relative;
+	font-size:.85em;
+	font-weight: bold;
+	color: #578695;
+	text-align: right; /*This was the only way to to align the text in the center-could center by controlling div*/
+	letter-spacing: 1.35px;
+	margin-top: -20px;
+}
+
+.header-links a {
+	margin-right: 35px;
+	color: #9D9E9F;
 }
 
 h1 {
 	font-family: 'Roboto Condensed', sans-serif;
-	/*font-family: 'Julius Sans One', sans-serif;*/
-	font-size: 3.5em;
+	/* font-family: 'Julius Sans One', sans-serif; */
+	/*font-size: 4.2vw;*/
+	font-size: 3.8em;
 	font-weight: normal;
 	text-transform: uppercase;
 	position: relative;
+	line-height: 1;
 }
 
 h2 {
@@ -34,7 +240,25 @@ h2 {
 	display: block;
 }
 
+.hattitude {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+}
+
 .solid-orange {
+	height: 50px;
+	/*background-color: #f38931;*/
+	background-color: #23586B;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	z-index: 1;
+	/*margin-top: 136px;*/
+}
+
+.solid-orange-thin {
 	height: 5px;
 	background-color: #f38931;
 	position: relative;
@@ -45,36 +269,64 @@ h2 {
 	/*margin-top: 136px;*/
 }
 
+
 .main-white-container {
 	position: relative;
-	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/front-pg-bw-attitude.jpg");
-	background-position: right;
-	/*background-position-y: 0px;*/
-	margin: 0 auto;
-	background-repeat: no-repeat;
-	/*background-size: 60%;*/
 	height: 470px;
+
+	/*Styles that were active below*/
+
+	/*background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/front-pg-bw-attitude.2.jpg");
+	background-position: 100px 16%;
+	margin: 0 auto;
+	background-repeat: no-repeat;*/
+
+	/*Styles that were active above. Styles that were inactive below*/
+	
+	/*background-size: cover;*/
+	/*background-position: right;*/
+	/*background-position-y: 0px;*/
+	/*background-size: 60%;*/
+	/*height: 490px;*/
+
 	width: 100%;
 	background-color: white;
 	display: block;
 }
 
+.centering-container {
+	height: 490px;
+	width: 90%;
+	background-color: red;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+/*Logo-Slogan-Container Start*/
 .logo-slogan-container {
 	position: relative;
-	margin: 0 auto;
-	display: block;
+	display: inline-block;
 	float: left;
-	margin-top: 40px;
+	height: 470px;
 	width: 40%;
-	padding-left:10%;
-	height: 430px;
+	z-index: 1;
+}
+
+.l-s-innerContainer {
+	float: right;
+	position: relative;
+	display: block;
+	width: 70%;
+	height: 100%;
+	margin-right: -10%;
+	margin-top: 7%;
 }
 
 .gray-rule {
 	position: relative;
 	margin: 0 auto;
 	background-color: #9d9e9f;
-	width: 99%;
 	height: 2px;
 	/*margin: 0 auto;*/
 	margin-top: 15px;
@@ -94,17 +346,7 @@ h2 {
 	margin: 0 auto;
 	position: relative;
 	display: block;
-	width: 323px;
-}
-
-.lower-gradient-container {
-	height: 70px;
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
-	display: block;
-	background-color: blue;
-	/*margin-top: 136px;*/
+	margin-left: -3%;
 }
 
 .colored-square {
@@ -116,40 +358,100 @@ h2 {
 	height: 49px;*/
 }
 
+/*Logo-Slogan-Container End*/
+
+
+/*Attitude Photo Container Start*/
+.attitude-photo-container {
+	display: inline-block;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/front-pg-bw-attitude.2.jpg");
+	
+
+	/*background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/front-pg-bw-attitude.2.jpg"); */
+
+
+	/*background-position: 100px 16%;*/
+	background-repeat: no-repeat;
+	position: relative;
+	float: right;
+
+	background-size: cover;
+	/*background-position: right;*/
+	background-position-x: -10px;
+	/*background-size: 60%;*/
+	/*height: 490px;*/
+
+	height: 470px;
+	width: 50%;
+}
+/*Attitude Photo Container End*/
+
+
+.lower-gradient-container {
+	height: 70px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	background-color: blue;
+	/*margin-top: 136px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Hat Details Below *******************************/
 
+
+
 .hat-details-container {
+	height: 465px;
 	margin: 0 auto;
-	max-width: 100%;
-	/*height:100vh;*/
 	position: relative;
-    /*padding:10%;*/
-    height: 500px;
+	display: block;
+	padding-top: 50px;
+	  margin-top: 50px;
 }
 
 .hat-details-white-container {
 	background-color: white;
 	/*z-index: 1;*/
-	border-style: solid;
+	/* border-style: solid;
 	border-color: black;
-	border-width: .25em;
-	width: 85%; /*Fix: does this look right? I'm going for as close to 100 percent responsive as I can, but I think the 80% height part might be being interpretted as 80% of the browser window and not 80 or the enclosing div height*/
-	height: 80%;
+	border-width: .25em; */
+	height:350px;
+	width: 880px;
 	position: relative;
 	margin:0 auto;
 	display: block;
-	top: 9%;
 }
 
 .hat-details-right-image-container {
 	background-color: white;
 	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-guy.jpg");
-	background-position: 10% 16%;
+	background-position: 44% 15%;
 	background-repeat: no-repeat;
-	background-size: 122%;
-	height: 100%;
-	width: 36%;
+	background-size: 100%;
+	height: 350px;
+	width: 284px;
 	float: right;
 	position: relative;
 	margin: 0;
@@ -157,24 +459,60 @@ h2 {
 	display: inline-block;
 }
 
-.hat-details-right-image {
+.hat-details-left-image-container {
+	background-color: white;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/white-hat-guy.jpg");
+	background-position: 44% 15%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 350px;
+	width: 284px;
+	float: left;
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	display: inline-block;
+}
+
+/*.hat-details-right-image {
 	float:right;
 	display: block;
 	width: 112%;
 	position: relative;
-}
+}*/
 
 .hat-details-left-container {
-	float:left;
+	float: left;
 	display: inline-block;
 	position: relative;
-	width: 62%;
+	width: 540px;
 	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-shadow.jpg");
-	background-position: 101% 70%;
+	/* background-position: 182% 70%; */
+	background-position-x: 276px;
+	background-position-y: 52px;
 	background-repeat: no-repeat;
-	height: 100%;
-	margin-top: 2%;
- 	margin-left: 2%;
+	/* background-color: red; */ 
+	background-size: 56%;
+	height: 310px;
+	/* margin-top: 2%; */
+	padding: 20px;
+}
+
+.hat-details-right-container {
+  float: right;
+  display: block;
+  position: relative;
+  width: 549px;
+  background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/white-trilby.jpg");
+  /* background-position: 182% 70%; */
+  background-position-x: 207px;
+  background-position-y: 27px;
+  background-repeat: no-repeat;
+  /* background-color: red; */
+  background-size: 62%;
+  height: 310px;
+  /* margin-top: 2%; */
+  padding: 20px;
 }
 
 .hat-details-price {
@@ -196,7 +534,7 @@ h2 {
 .gray-rule2 {
 	position: relative;
   	background-color: #9d9e9f;
-  	width: 96%;
+  	width: 99%;
  	height: .10em;
   	/* margin: 0 auto; */
   	display: block;	
@@ -231,6 +569,107 @@ h2 {
 	/*margin-left:-10%;*/
 }
 
+/* Details Section End**************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Form styles below*/
+
+.test-form {
+	display:block;
+	position: relative;
+	margin: 0 auto;
+	width: 80%;
+	background-color: gray;
+}
+
+/*.field-and-name {
+	width: 200px;
+	height: 100px;
+	position: relative;
+	float: left;
+	margin-right: 30px;
+	display: inline-block;
+	border-radius: 3px;
+	color: white;
+	background-color: red;
+}*/
+
+.form-container {
+  background-color: #f38931;
+  width: 834px;
+  height: 20px;
+  margin: 0 auto;
+  position: relative;
+  display: block;
+  padding: 23px;
+  padding-top: 24px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.color-qty-size {
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	color: rgb(253, 253, 253);
+	margin-left: 45px;
+}
+
+.right-margin {
+	margin-right: 4px;
+}
+
+.submit {
+	background color: red;
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	float: left;
+	color: rgb(253, 253, 253);
+	margin-left: 45px;
+	margin-top: 5px;
+}
+
+.less-margin {
+	margin-left: 20px;
+}
+
+.center {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	margin-left: 36px;
+}
+
+
+
 /*Fix: How make addition to multiple items in the same list*/ 
 
 /*Fix: Can you spec a font size and then set borders relatively in ems?*/  
@@ -244,27 +683,26 @@ any other suggestions for responsive aspect*/
 
 /*Fix: make sure all sizes are percentages.*/ 
 
-/*Fix: Do you have any tips for managing inheritance*/
+/*Fix: Do you have any tips for managing inheritance NO GOOD ANSWER-JUST OVER-RIGHT*/
 
 /*Fix: My lower logo looks blurry.Brought in a 100% version (jpg-max) it looked blurry.*/
 
 /*Will an absolute or fixed position supercede all div positions and let everything float around it?*/ 
 
-/*I used an HTML break tag, though I thought you had said not to do it. I use it selectively for headers, not for bodies of text that might reflow and
-/*cause a forced break to look incorrect. It seemed a lot quicker than creating a span and associated class. Is this wrong?*/
+/*I used an HTML break tag, though I thought you had said not to do it. I use it selectively for headers, not for bodies of text that might reflow and cause a forced break to look incorrect. It seemed a lot quicker than creating a span and associated class. Is this wrong? USE TWO SPANS THAT SURROUND TWO GROUPS OF TEXT AND SET AS BLOCK-*/
 
-/*HTML Div Tag: class="StyleA StyleB" can be very different than class="StyleB StyleA... right?"*/ 
+/*HTML Div Tag: class="StyleA StyleB" can be very different than class="StyleB StyleA... right?" ONLY MATTERS IN STYLE SHEET*/ 
 
 /*My responsive divs seem a little clunky*/ 
 
-/*Gray rule style ok or is there a better way?*/
+/*Gray rule style ok or is there a better way? FINE THE WAY I DID IT*/
 
-/*In my small-logo style, I glued down the aspect ratio by specing both the height and the width, but I did find that I could actually size both by just specing the width. */
+/*In my small-logo style, I glued down the aspect ratio by specing both the height and the width, but I did find that I could actually size both by just specing the width. NO WAY TO GLUE DOWN ASPECT RATIO*/
 
 /*Is there a way to force open a div with a floating div*/
 
-/*Is there a way to scale text with width or height--both can be a problem*/
+/*Is there a way to scale text with width or height--both can be a problem NOT THAT I KNOW OF--BREAK POINTS*/
 
-/*What are standard screen pixel widths for media query breaks*/
+/*What are standard screen pixel widths for media query breaks NO STANDARDS CHANGING TOO FAST--USE BOOTSTRAP*/
 
 /*My second gray rule is acted oddly... When I just surrounded the image with a div, the gray div didn't respect the block property of the div. It would work only work if I applied a class to the image itself*/
