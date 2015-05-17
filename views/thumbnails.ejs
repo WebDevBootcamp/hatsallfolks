@@ -1,0 +1,17 @@
+    <% items.forEach(function(el,index)
+    {
+    var source="images/thumb/" + el.sku + ".jpg";
+    var button="button" + index;
+    %>
+
+      <div><%= el.sku %></div>
+      <div><%= el.product %></div>
+      <div><%= el.description %></div>
+      <div><img src="<%= source%>"></div>
+      <input type="button" id="<%= button%>"  class="detail_button" value="Details">
+      <div>****************************************</div>
+
+
+    <% });  %>
+
+

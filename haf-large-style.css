@@ -8,27 +8,53 @@
 	display: block;
 }
 
-.haf-logo {
-	position: relative;
-}
-
 h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	/*font-family: 'Julius Sans One', sans-serif;*/
-	font-size: 4em;
+	font-size: 3.5em;
 	font-weight: normal;
 	text-transform: uppercase;
+	position: relative;
+}
+
+h2 {
+	text-transform: uppercase;
+	color: black;
+	margin-top: .5%;
+	font-size: 1.5em;
+	line-height: 1.15em;
+}
+
+.solid-blue {
+	height: 5px;
+	background-color: #4ac8f5;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+}
+
+.solid-orange {
+	height: 5px;
+	background-color: #f38931;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	display: block;
+	z-index: 1;
+	/*margin-top: 136px;*/
 }
 
 .main-white-container {
 	position: relative;
 	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/front-pg-bw-attitude.jpg");
 	background-position: right;
-	background-position-y: 0px;
+	/*background-position-y: 0px;*/
 	margin: 0 auto;
 	background-repeat: no-repeat;
+	/*background-size: 60%;*/
 	height: 470px;
-	width: 880px;
+	width: 100%;
 	background-color: white;
 	display: block;
 }
@@ -38,9 +64,9 @@ h1 {
 	margin: 0 auto;
 	display: block;
 	float: left;
-	left: 75px;
 	margin-top: 40px;
-	width: 350px;
+	width: 40%;
+	padding-left:10%;
 	height: 430px;
 }
 
@@ -48,7 +74,7 @@ h1 {
 	position: relative;
 	margin: 0 auto;
 	background-color: #9d9e9f;
-	width: 100%;
+	width: 99%;
 	height: 2px;
 	/*margin: 0 auto;*/
 	margin-top: 15px;
@@ -61,11 +87,14 @@ h1 {
 	position: relative;
 	margin: 0 auto;
 	text-align: center;
+	position: relative;
 }
 
 .haf-logo {
 	margin: 0 auto;
 	position: relative;
+	display: block;
+	width: 323px;
 }
 
 .lower-gradient-container {
@@ -74,6 +103,7 @@ h1 {
 	margin: 0 auto;
 	width: 100%;
 	display: block;
+	background-color: blue;
 	/*margin-top: 136px;*/
 }
 
@@ -86,3 +116,155 @@ h1 {
 	height: 49px;*/
 }
 
+
+/* Hat Details Below *******************************/
+
+.hat-details-container {
+	margin: 0 auto;
+	max-width: 100%;
+	/*height:100vh;*/
+	position: relative;
+    /*padding:10%;*/
+    height: 500px;
+}
+
+.hat-details-white-container {
+	background-color: white;
+	/*z-index: 1;*/
+	border-style: solid;
+	border-color: black;
+	border-width: .25em;
+	width: 85%; /*Fix: does this look right? I'm going for as close to 100 percent responsive as I can, but I think the 80% height part might be being interpretted as 80% of the browser window and not 80 or the enclosing div height*/
+	height: 80%;
+	position: relative;
+	margin:0 auto;
+	display: block;
+	top: 9%;
+}
+
+.hat-details-right-image-container {
+	background-color: white;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-guy.jpg");
+	background-position: 10% 16%;
+	background-repeat: no-repeat;
+	background-size: 122%;
+	height: 100%;
+	width: 36%;
+	float: right;
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.hat-details-right-image {
+	float:right;
+	display: block;
+	width: 112%;
+	position: relative;
+}
+
+.hat-details-left-container {
+	float:left;
+	display: inline-block;
+	position: relative;
+	width: 62%;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-shadow.jpg");
+	background-position: 101% 70%;
+	background-repeat: no-repeat;
+	height: 100%;
+	margin-top: 2%;
+ 	margin-left: 2%;
+}
+
+.hat-details-price {
+	color: #f38931;
+	font-style: bolder;
+	font-family: 'Roboto', sans-serif;
+	font-weight: bolder;
+	line-height: 3em;
+}
+
+.hat-details-logo {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 20%;
+	margin-right: 90%;
+}
+
+.gray-rule2 {
+	position: relative;
+  	background-color: #9d9e9f;
+  	width: 96%;
+ 	height: .10em;
+  	/* margin: 0 auto; */
+  	display: block;	
+  	margin-bottom: .9em;
+}
+
+/*.small-logo {
+	width: 80%;
+	height: 80%;
+	position: relative;
+	display: block;
+	margin-bottom: .2em;
+}*/
+
+.hat-details-text {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	float: left;
+	line-height: 1.6em;
+	font-size: 1.3em;
+	margin-right: 280px;
+}
+
+.hat-shadow-image {
+	position: relative;
+	display: block;
+	float:left;
+	margin-top: 15%;
+	/*margin-left: 30%;*/
+	z-index: 0;
+	/*margin-left:-10%;*/
+}
+
+/*Fix: How make addition to multiple items in the same list*/ 
+
+/*Fix: Can you spec a font size and then set borders relatively in ems?*/  
+
+/*Fix: Should I make put the photo of the guy (in the top-most container) in a div --
+any other suggestions for responsive aspect*/ 
+
+/*Fix: How can I make text scale too?*/ 
+
+/*Fix: How make background image overflow hidden?*/ 
+
+/*Fix: make sure all sizes are percentages.*/ 
+
+/*Fix: Do you have any tips for managing inheritance*/
+
+/*Fix: My lower logo looks blurry.Brought in a 100% version (jpg-max) it looked blurry.*/
+
+/*Will an absolute or fixed position supercede all div positions and let everything float around it?*/ 
+
+/*I used an HTML break tag, though I thought you had said not to do it. I use it selectively for headers, not for bodies of text that might reflow and
+/*cause a forced break to look incorrect. It seemed a lot quicker than creating a span and associated class. Is this wrong?*/
+
+/*HTML Div Tag: class="StyleA StyleB" can be very different than class="StyleB StyleA... right?"*/ 
+
+/*My responsive divs seem a little clunky*/ 
+
+/*Gray rule style ok or is there a better way?*/
+
+/*In my small-logo style, I glued down the aspect ratio by specing both the height and the width, but I did find that I could actually size both by just specing the width. */
+
+/*Is there a way to force open a div with a floating div*/
+
+/*Is there a way to scale text with width or height--both can be a problem*/
+
+/*What are standard screen pixel widths for media query breaks*/
+
+/*My second gray rule is acted oddly... When I just surrounded the image with a div, the gray div didn't respect the block property of the div. It would work only work if I applied a class to the image itself*/
