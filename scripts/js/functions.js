@@ -7,19 +7,14 @@ $(document).ready(function()
   }).done(function (ajaxReturn)
   {
     var items = JSON.parse(ajaxReturn);
-    var html = new EJS({url: "views/thumbnails.ejs"}).render({items:items});
-    $("#thumbnail_container").html(html);
+    var html = new EJS({url: "views/thumbnail.ejs"}).render({items:items});
 
-    //setTimeout(function()
-    //{
-      $(".detail_button").click(function(e)
-      {
-        alert($(this).attr("id"));
+    $("#thumbnail-container").html(html);
 
-      });
+  });
 
-    //}, 500);
-
+    $("#thumbnail_container").on("click", ".detail-link", function(e) {
+    alert(this.id);
   });
 
 });
