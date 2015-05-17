@@ -8,11 +8,13 @@
 
     // MAKE RETURN TO SEND ARRAY OF $RESULT TO JSON FOR JACK
       $items = [];
-      while($row = $result->fetch_assoc())
+      while ($row = $result->fetch_assoc())
       {
-          $items[] = $row["sku"]. $row["product"].$row["description"];
+          $items[] = $row["sku"].",".$row["product"].",".$row["description"];
       }
 
-    print json_encode($items);
+  print_r($items);
+
+    //print json_encode($items);
     $conn->close();
 ?>
