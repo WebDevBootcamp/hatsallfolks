@@ -5,7 +5,7 @@
 %>
 
 <!--Thumb Container Start-->
-<div class="thumbnail-2">
+<div class="thumbnail-2" container-index="<%= index %>">
     <!--<div class="hat-name-thumb">
         BRIXTON FELT HAT
     </div>
@@ -25,7 +25,7 @@
             <p>
                 <%= el.description %>
             </p>
-            <div class="thumb-text-float-right">> Click Here for <a class=detail-link id="<%= el.sku%>" href="#Brixton-Detail">More Information</a>
+            <div class="thumb-text-float-right">> Click Here for <a class=detail-link data-listindex="<%= index %>" id="<%= el.sku%>" href="#Brixton-Detail">More Information</a>
             </div>
         </div>
 
@@ -35,12 +35,15 @@
     </div><!--3 thumb-container thumb-inr3 End-->
 
     <div class="shadow-overlay"><!--Shadow Box Overlay-->
+
     </div>
 
 </div>
 <!--Thumb Container End-->
 
 <div class="white-block">
+    <div class="thumb-text-float-right"><a class=detail-link listindex="<%= index %>" id="<%= el.sku%>" href="#Brixton-Detail">> Click Here for More Information</a>
+</div>
 </div>
 
 <% });  %>

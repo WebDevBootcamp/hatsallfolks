@@ -1,5 +1,25 @@
 $(document).ready(function()
 {
+  displayThumbnails();
+
+  $("#thumbnail-container").on("click", ".detail-link", function(e)
+  {
+    //alert(this.id + " " + this.listindex);
+    //alert(this.id);
+    //alert($(this).attr("id"));
+    //alert($(this).data("id"));
+
+    //console.log(this);
+    //console.log(e);
+    displayThumbnails();
+    displayDetail(this.id, $(this).attr("listindex"));
+
+  });
+
+});
+
+function displayThumbnails()
+{
   $.ajax(
   {
     type: "POST",
@@ -13,9 +33,14 @@ $(document).ready(function()
 
   });
 
-    $("#thumbnail_container").on("click", ".detail-link", function(e) {
-    alert(this.id);
-  });
+}
 
-});
+function displayDetail(id, listIndex)
+{
+  //alert(id);
+  //alert(listIndex);
+
+
+
+}
 
