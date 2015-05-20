@@ -1,20 +1,23 @@
-#content {
-    margin: 20px auto;
-    width: 60%;
-}
+/*#content {*/
+    /*margin: 20px auto;*/
+    /*width: 60%;*/
+/*}*/
 
-.hats {
-    float: left
-}
+/*.hats {*/
+    /*float: left*/
+/*}*/
 
-img {
-    padding: 50px;
-}
+/*img {*/
+    /*padding: 50px;*/
+/*}*/
 
-.row {
-    overflow: hidden;
-}
+/*.row {*/
+    /*overflow: hidden;*/
+/*}*/
 
-html {
-    overflow-y: scroll;
-}
+/*.title {*/
+    /*color: #A9A9A9;*/
+    /*font-size: 30px;*/
+    /*font-weight: bold;*/
+    /*padding: 25px;*/
+/*}*/

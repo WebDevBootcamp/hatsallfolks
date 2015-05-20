@@ -166,3 +166,10 @@
     text-align: center; /*This was the only way to to align the text in the center-could center by controlling div*/
     letter-spacing: 1.35px;
 }
+
+.title {
+    color: #A9A9A9;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 25px;
+}

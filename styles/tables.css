@@ -64,9 +64,9 @@ table {
     vertical-align: bottom
 }
 
-.table td {
-    vertical-align: top
-}
+/*.table td {*/
+    /*vertical-align: top*/
+/*}*/
 
 .table thead:first-child tr th, .table thead:first-child tr td {
     border-top: 0
