@@ -14,3 +14,7 @@ img {
 .row {
     overflow: hidden;
 }
+
+html {
+    overflow-y: scroll;
+}
