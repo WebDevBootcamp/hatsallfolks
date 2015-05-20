@@ -1,11 +1,11 @@
 <% items.forEach(function(el,index)
 {
-    var source="images/thumb/" + el.sku + ".jpg";
-//    var linkIndex="link" + index;
+    var source="images/thumb/" + el.SKU + ".jpg";
+    var idIndex="thumbnail" + index;
 %>
 
 <!--Thumb Container Start-->
-<div class="thumbnail-2" container-index="<%= index %>">
+<div class="thumbnail-2" id="<%= idIndex%>">
     <!--<div class="hat-name-thumb">
         BRIXTON FELT HAT
     </div>
@@ -19,11 +19,11 @@
         </div>
 
         <div class="thumb-text"><!--text-->
-            <h2><%= el.product %></h2>
+            <h2><%= el.Product %></h2>
             <div class="gray-rule4">
             </div>
             <p>
-                <%= el.description %>
+                <%= el.Description %>
             </p>
             <div class="thumb-text-float-right">> Click Here for <a class=detail-link data-listindex="<%= index %>" id="<%= el.sku%>" href="#Brixton-Detail">More Information</a>
             </div>
@@ -42,7 +42,7 @@
 <!--Thumb Container End-->
 
 <div class="white-block">
-    <div class="thumb-text-float-right"><a class=detail-link listindex="<%= index %>" id="<%= el.sku%>" href="#Brixton-Detail">> Click Here for More Information</a>
+    <div class="thumb-text-float-right"><a class=detail-link data-list-index="<%= index %>" id="<%= el.sku%>" href="#Brixton-Detail">> Click Here for More Information</a>
 </div>
 </div>
 

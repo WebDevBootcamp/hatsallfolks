@@ -3,7 +3,7 @@
     $conn = db_connect();
 
     // QUERY DB FOR SMALL SIZES ONLY SO THAT MAIN PAGE SHOWS ONLY EACH PRODUCT, NOT SIZES AND COLORS
-    $sql = "SELECT sku, product, description FROM Inventory WHERE size='small'";
+    $sql = "SELECT sku, product, description FROM Inventory WHERE size='small' AND class='1'";
     $result = $conn->query($sql);
     $conn->close();
 
@@ -13,14 +13,15 @@
       // OUTPUT DATA FOR EACH ROW
       while($row = $result->fetch_assoc())
       {
-
           $items[] = $row;
       }
+
+      print json_encode($items);
     }
     else
     {
-         echo "0 results";
+      print "0 results";
     }
 
-    print json_encode($items);
+
 ?>
