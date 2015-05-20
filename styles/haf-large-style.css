@@ -60,6 +60,7 @@ a:active {
     margin: 0 auto;
     position: relative;
     display: block;
+    overflow: hidden;
 }
 
 .gradient {
