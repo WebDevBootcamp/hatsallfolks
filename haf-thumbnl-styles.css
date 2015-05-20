@@ -11,8 +11,17 @@
 }
 
 .lower-container-outr-band {
-	width: 1020px;
+	width: 1000px;
 	background-color: rgb(79, 76, 76);
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.lower-container-outr-band2 {
+	width: 1010px;
+	background-color: #70b865;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -22,6 +31,17 @@
 	box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
 }
 
+.lower-container-outr-band3 {
+	width: 1030px;
+	background-color: rgb(79, 76, 76);
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+}
 
 .thumbnail-1 {
 	margin: 0 auto;
@@ -200,7 +220,7 @@
 }
 
 .gray-footer-block {
-	background-color: #898787;
+	background-color: rgb(79, 76, 76);
 	display: block;
 	position: relative;
 	margin: 0 auto;=
@@ -223,7 +243,8 @@
 	height: 20px;
 	margin: 0 auto;
 	position: relative;
-	font-size:.85em;
+	font-size: 1em;
+	font-weight: bold;
 	text-align: center; /*This was the only way to to align the text in the center-could center by controlling div*/
 	letter-spacing: 1.35px;
 	margin-right: 5px;
@@ -279,4 +300,71 @@
 	color: rgb(166, 234, 154);;
 	font-style: italic;
 	font-weight: bold;
+}
+
+
+
+
+
+
+
+.animation {
+  top: -49px;
+  margin-right: 100px;
+  left: -300px;
+  width: 480px;
+  left: -200px;
+  height: 220px;
+  position: relative;
+  background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/spring-sale.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 5s;
+  animation-name: mymove;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+
+.purple-square {
+	background-color: purple;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.red-square {
+	background-color: red;
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.top-text {
+	margin-left: 0;
+	margin-right: 0;
+	/*text-align: center;*/
+}
+
+bottom-text {
+	bottom: 0;
+	right: 0;
 }

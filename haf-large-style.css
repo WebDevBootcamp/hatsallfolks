@@ -213,7 +213,7 @@ h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	/* font-family: 'Julius Sans One', sans-serif; */
 	/*font-size: 4.2vw;*/
-	font-size: 3.8em;
+	font-size: 3em;
 	font-weight: normal;
 	text-transform: uppercase;
 	position: relative;
@@ -241,6 +241,48 @@ h2 {
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	hyphens: none;
+	display: block;
+}
+
+.front-page-text {
+	font-size: 1.1em;
+	margin-top: 10px;
+	line-height: 1.6em;
+	top: 10px;
+	text-align: center;
+	font-family: "Droid Serif", serif;
+	font-style: italic;
+	display: block;
+}
+
+.hats-of-the-month {
+	font-size: 3.6em;
+	font-family: "Droid Serif", serif;
+	font-style: italic;
+	display: block;
+	margin-left: 34px;
+	color: rgb(101, 147, 94);
+	position: absolute;
+	bottom: -11px;
+	text-shadow: 2px 1px #353535;
+}
+
+
+
+.hat-of-month-container {
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  background-color: black;
+  /* margin-top: 136px; */
+  z-index: 1;
+}
+
+.orange {
+	background-color: #f38931;
+
 }
 
 .solid-orange {
@@ -324,9 +366,9 @@ h2 {
 	position: relative;
 	margin: 0 auto;
 	background-color: #9d9e9f;
-	height: 2px;
+	height: 1.5px;
 	/*margin: 0 auto;*/
-	margin-top: 15px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	display: block;
 }
@@ -390,9 +432,12 @@ h2 {
 	margin: 0 auto;
 	width: 100%;
 	display: block;
-	background-color: blue;
+	background-color: white;
 	/*margin-top: 136px;*/
+	z-index: 2;
 }
+
+
 
 /* Home Page Above *******************************/
 
@@ -776,4 +821,73 @@ h2 {
 	overflow: hidden;
 	display: inline-block;
 }
+
+
+
+
+
+/*Spring Sale************/
+.spring-sale {
+	
+	height: 250px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	color: black;
+	font-size: 2.5em;
+	text-align: center;
+	background-color:#70b865;
+	z-index: 1;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/green-background.jpg");
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: fixed;
+}
+
+.spring-sale-big-type {
+	font-family: 'Lily Script One', cursive;
+	color: white;
+	font-size: 4em;
+	text-shadow: 3px 3px #000000;
+	/*text-decoration: underline;*/
+	 
+	 /*border-bottom: 1px solid black;
+	 border-spacing: 1px;*/
+
+}
+
+.hat-stack {
+	position: relative;
+	display: block;
+	height: 400px;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: -400px;
+	z-index: 2;
+}
+
+.black-rule {
+	display: block;
+	height: 1px;
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+}
+
+
+
+
+
+/*background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";*/
 
