@@ -65,14 +65,19 @@ function displayDetail(id, listIndex)
       data: "sku=" + id
     }).done(function (ajaxReturn)
     {
-      console.log(ajaxReturn);
-      var items = JSON.parse(ajaxReturn);
-      console.log(items);
-      var html = new EJS({url: "views/right_detail.ejs"}).render({items:items});
-      $(container).html(html);
-    });
+          //console.log(ajaxReturn);
+          var items = JSON.parse(ajaxReturn);
+          //console.log(items);
+          var html = new EJS({url: "views/right_detail.ejs"}).render({items: items});
+          $(container).html(html);
 
-    //alert("Even " + listIndex);
+          var largePixURL = "url('http://weblab.us/hatsall/images/large/" + id + ".jpg')";
+          $(".hat-details-left-container").css("background-image", largePixURL);
+
+          var modelPixURL = "url('http://weblab.us/hatsall/images/model/" + id + ".jpg')";
+          $(".hat-details-right-image-container").css("background-image", modelPixURL);
+
+    });
 
   }
   else
@@ -84,14 +89,19 @@ function displayDetail(id, listIndex)
       data: "sku=" + id
     }).done(function (ajaxReturn)
     {
-      console.log(ajaxReturn);
+      //console.log(ajaxReturn);
       var items = JSON.parse(ajaxReturn);
-      console.log(items);
+      //console.log(items);
       var html = new EJS({url: "views/left_detail.ejs"}).render({items:items});
       $(container).html(html);
-    });
 
-    //alert("Odd" + listIndex);
+      var largePixURL = "url('http://weblab.us/hatsall/images/large/" + id + ".jpg')";
+      $(".hat-details-right-container").css("background-image", largePixURL);
+
+      var modelPixURL = "url('http://weblab.us/hatsall/images/model/" + id + ".jpg')";
+      $(".hat-details-left-image-container").css("background-image", modelPixURL);
+
+    });
 
   }
 
