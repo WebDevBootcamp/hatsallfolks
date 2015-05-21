@@ -37,6 +37,7 @@ function displayThumbnails()
   {
     //console.log(ajaxReturn);
     var items = JSON.parse(ajaxReturn);
+    //console.log(items);
     var html = new EJS({url: "views/thumbnail.ejs"}).render({items:items});
 
     $("#thumbnail-container").html(html);

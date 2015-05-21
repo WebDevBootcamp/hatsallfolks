@@ -49,7 +49,7 @@
 	display: block;
 	width: 980px;
 	background-color: #898787; 
-	height: 198px;
+	/*height: 198px;*/
 	padding-left: -15px;
 	padding-top: 25px;
 }
@@ -60,6 +60,7 @@
 	display: block;
 	width: 879px;
 	background-color: white;
+	/*height: 140px;*/
 	/*height: 400px;*/
 	/*top: 27px;*/
 	border-width: 15px;
@@ -132,7 +133,7 @@
 }
 
 .thumb-text-float-right {
-	text-align: right:;
+	text-align: right;
 	float: right;
 	color: rgb(166, 234, 154);
 	margin: 0 auto;
@@ -207,7 +208,7 @@
 }
 
 .link-to-detail2 {
-	text-align: right:;
+	text-align: right;
 	float: right;
 	color: rgb(166, 234, 154);
 	margin: 0 auto;
@@ -267,7 +268,7 @@
 
 
 .link-to-detail2 {
-	text-align: right:;
+	text-align: right;
 	float: right;
 	color: rgb(166, 234, 154);
 	margin: 0 auto;
@@ -364,7 +365,7 @@
 	/*text-align: center;*/
 }
 
-bottom-text {
+.bottom-text {
 	bottom: 0;
 	right: 0;
 }
