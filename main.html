@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div id="content">
+        <div class="row">
+            <div class="hats"><img src="images/sku01.jpg" class="sku"></div>
+            <div class="hats"><img src="images/sku02.jpg" class="sku"></div>
+        </div>
+        <div class="row">
+            <div class="hats"><img src="images/sku03.jpg" class="sku"></div>
+            <div class="hats"><img src="images/sku04.jpg" class="sku"></div>
+        </div>
+        <div class="row">
+            <div class="hats"><img src="images/sku05.jpg" class="sku"></div>
+        </div>
+    </div>
+
+
+
+    <!--AJAX STUFF BELOW-->
+    $.ajax(
+    {
+        type: "POST",
+        url: "thumbs.php",
+        data: "itemID=" + itemID
+        }).done(function (ajaxReturn)
+        {
+        items = JSON.parse(ajaxReturn);
+        $("#sku").val(items.sku);
+        $("#product").val(items.product);
+        $("#description").val(items.description);
+    });
+
+
+
+    <script>
+        $( document).ready(function() {
+            var hatChoice = $('.sku');
+            hatChoice.on('click', function (idx) {
+                var str = $(this).attr('src');
+                var sku = str.slice(10,-4);
+            })
+        })
+    </script>
+
+</body>
+</html>
