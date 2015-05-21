@@ -517,7 +517,7 @@ h2 {
 
 /*2 Details Guy Pic (Guy on Right-Version)*/
 
-.hat-details-right-image-container {
+.detail-right-model-container {
 	background-color: white;
 	background-image: url("");
 	background-position: 44% 15%;
@@ -534,7 +534,7 @@ h2 {
 
 /*2 Details Guy Pic (Guy on Left-Version)*/
 
-.hat-details-left-image-container {
+.detail-left-model-container {
 	background-color: white;
 	background-image: url("");
 	background-position: 44% 15%;
@@ -553,7 +553,7 @@ h2 {
 
 /*2 Details Hat Pic (Left Hat Position)*/
 
-.hat-details-left-container {
+.detail-right-hat-container {
 	float: left;
 	display: inline-block;
 	position: relative;
@@ -572,7 +572,7 @@ h2 {
 
 /*2 Details Hat Pic (Right Hat Position)*/
 
-.hat-details-right-container {
+.detail-left-hat-container {
 	float: right;
 	display: block;
 	position: relative;

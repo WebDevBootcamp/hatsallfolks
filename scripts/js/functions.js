@@ -72,10 +72,10 @@ function displayDetail(id, listIndex)
           $(container).html(html);
 
           var largePixURL = "url('http://weblab.us/hatsall/images/large/" + id + ".jpg')";
-          $(".hat-details-left-container").css("background-image", largePixURL);
+          $(".detail-right-hat-container").css("background-image", largePixURL);
 
           var modelPixURL = "url('http://weblab.us/hatsall/images/model/" + id + ".jpg')";
-          $(".hat-details-right-image-container").css("background-image", modelPixURL);
+          $(".detail-right-model-container").css("background-image", modelPixURL);
 
     });
 
@@ -96,10 +96,10 @@ function displayDetail(id, listIndex)
       $(container).html(html);
 
       var largePixURL = "url('http://weblab.us/hatsall/images/large/" + id + ".jpg')";
-      $(".hat-details-right-container").css("background-image", largePixURL);
+      $(".detail-left-hat-container").css("background-image", largePixURL);
 
       var modelPixURL = "url('http://weblab.us/hatsall/images/model/" + id + ".jpg')";
-      $(".hat-details-left-image-container").css("background-image", modelPixURL);
+      $(".detail-left-model-container").css("background-image", modelPixURL);
 
     });
 
