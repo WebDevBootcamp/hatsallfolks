@@ -171,9 +171,6 @@ a:active {
 	background-color: gray;
 }
 /* Above styles were originally in the "haf-base-styles.css"
-
-
-
 /* Large-Default-Version of CSS */
 
 .upper-gradient-container {
@@ -216,7 +213,7 @@ h1 {
 	font-family: 'Roboto Condensed', sans-serif;
 	/* font-family: 'Julius Sans One', sans-serif; */
 	/*font-size: 4.2vw;*/
-	font-size: 3.8em;
+	font-size: 3em;
 	font-weight: normal;
 	text-transform: uppercase;
 	position: relative;
@@ -244,6 +241,48 @@ h2 {
 	-webkit-hyphens: none;
 	-moz-hyphens: none;
 	hyphens: none;
+	display: block;
+}
+
+.front-page-text {
+	font-size: 1.1em;
+	margin-top: 10px;
+	line-height: 1.6em;
+	top: 10px;
+	text-align: center;
+	font-family: "Droid Serif", serif;
+	font-style: italic;
+	display: block;
+}
+
+.hats-of-the-month {
+	font-size: 3.6em;
+	font-family: "Droid Serif", serif;
+	font-style: italic;
+	display: block;
+	margin-left: 34px;
+	color: rgb(101, 147, 94);
+	position: absolute;
+	bottom: -11px;
+	text-shadow: 2px 1px #353535;
+}
+
+
+
+.hat-of-month-container {
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  display: block;
+  background-color: black;
+  /* margin-top: 136px; */
+  z-index: 1;
+}
+
+.orange {
+	background-color: #f38931;
+
 }
 
 .solid-orange {
@@ -327,9 +366,9 @@ h2 {
 	position: relative;
 	margin: 0 auto;
 	background-color: #9d9e9f;
-	height: 2px;
+	height: 1.5px;
 	/*margin: 0 auto;*/
-	margin-top: 15px;
+	margin-top: 20px;
 	margin-bottom: 15px;
 	display: block;
 }
@@ -393,11 +432,14 @@ h2 {
 	margin: 0 auto;
 	width: 100%;
 	display: block;
-	background-color: blue;
+	background-color: white;
 	/*margin-top: 136px;*/
+	z-index: 2;
 }
 
 
+
+/* Home Page Above *******************************/
 
 
 
@@ -419,7 +461,6 @@ h2 {
 
 
 /* Hat Details Below *******************************/
-
 
 
 .hat-details-container {
@@ -445,16 +486,9 @@ h2 {
 }
 
 
-/*.hat-details-right-image {
-	float:right;
-	display: block;
-	width: 112%;
-	position: relative;
-}*/
-
 .hat-details-price {
 	color: #f38931;
-	font-style: bolder;
+	/*font-style: bolder; Dead code. Bolder not a value for property. JL 2015.05.21*/
 	font-family: 'Roboto', sans-serif;
 	font-weight: bolder;
 	line-height: 3em;
@@ -478,14 +512,6 @@ h2 {
   	margin-bottom: .9em;
 }
 
-/*.small-logo {
-	width: 80%;
-	height: 80%;
-	position: relative;
-	display: block;
-	margin-bottom: .2em;
-}*/
-
 .hat-details-text {
 	margin: 0 auto;
 	position: relative;
@@ -493,7 +519,7 @@ h2 {
 	float: left;
 	line-height: 1.6em;
 	font-size: 1.3em;
-	margin-right: 280px;
+	margin-right: 323px;
 }
 
 .hat-shadow-image {
@@ -506,143 +532,7 @@ h2 {
 	/*margin-left:-10%;*/
 }
 
-
-
-
-
-/*Details Images Links Options Start*/
-
-
-/* Details Guy Pics*/
-
-/*2 Details Guy Pic (Guy on Right-Version)*/
-
-.detail-right-model-container {
-	background-color: white;
-	background-image: url("");
-	background-position: 44% 15%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 350px;
-	width: 284px;
-	float: right;
-	position: relative;
-	margin: 0;
-	overflow: hidden;
-	display: inline-block;
-}
-
-/*2 Details Guy Pic (Guy on Left-Version)*/
-
-.detail-left-model-container {
-	background-color: white;
-	background-image: url("");
-	background-position: 44% 15%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: 350px;
-	width: 284px;
-	float: left;
-	position: relative;
-	margin: 0;
-	overflow: hidden;
-	display: inline-block;
-}
-
-/*Detail Hat Pics Start*/
-
-/*2 Details Hat Pic (Left Hat Position)*/
-
-.detail-right-hat-container {
-	float: left;
-	display: inline-block;
-	position: relative;
-	width: 540px;
-	background-image: url("");
-	/* background-position: 182% 70%; */
-	background-position-x: 276px;
-	background-position-y: 52px;
-	background-repeat: no-repeat;
-	/* background-color: red; */ 
-	background-size: 56%;
-	height: 310px;
-	/* margin-top: 2%; */
-	padding: 20px;
-}
-
-/*2 Details Hat Pic (Right Hat Position)*/
-
-.detail-left-hat-container {
-	float: right;
-	display: block;
-	position: relative;
-	width: 549px;
-	background-image: url("");
-	/* background-position: 182% 70%; */
-	background-position-x: 207px;
-	background-position-y: 27px;
-	background-repeat: no-repeat;
-	/* background-color: red; */
-	background-size: 62%;
-	height: 310px;
-	/* margin-top: 2%; */
-	padding: 20px;
-}
-
-
-/* Details Section End**************************************/
-
-
-
-
-/*Photo Names Start*/
-Guy Photo Names (Details)
-
-1-detail-right-guy.jpg
-1-detail-left-guy.jpg
-
-2-detail-right-guy.jpg
-2-detail-left-guy.jpg
-
-3-detail-right-guy.jpg
-3-detail-left-guy.jpg
-
-4-detail-right-guy.jpg
-4-detail-left-guy.jpg
-
-
-
-Hat Photo Names (Details)
-
-1-detail-right-hat.jpg
-1-detail-left-hat.jpg
-
-2-detail-right-hat.jpg
-2-detail-left-hat.jpg
-
-3-detail-right-hat.jpg
-3-detail-left-hat.jpg
-
-4-detail-right-hat.jpg
-4-detail-left-hat.jpg
-
-
-------------------------
-
-Hat Photo Names (Thumbs)
-
-1-thumb-hat.jpg
-2-thumb-hat.jpg
-3-thumb-hat.jpg
-4-thumb-hat.jpg
-5-thumb-hat.jpg
-6-thumb-hat.jpg
-7-thumb-hat.jpg
-8-thumb-hat.jpg
-/* Photo Names End */
-
-
-
+/* Hat Details Above *******************************/
 
 
 
@@ -656,18 +546,6 @@ Hat Photo Names (Thumbs)
 	width: 80%;
 	background-color: gray;
 }
-
-/*.field-and-name {
-	width: 200px;
-	height: 100px;
-	position: relative;
-	float: left;
-	margin-right: 30px;
-	display: inline-block;
-	border-radius: 3px;
-	color: white;
-	background-color: red;
-}*/
 
 .form-container {
 	background-color: #f38931;
@@ -696,7 +574,7 @@ Hat Photo Names (Thumbs)
 }
 
 .submit {
-	background color: red;
+	background_color: red;
 	position: relative;
 	margin: 0 auto;
 	display: inline-block;
@@ -717,41 +595,144 @@ Hat Photo Names (Thumbs)
 	margin-left: 36px;
 }
 
+/*Details Styles Below... */
+/*Right Version*/
+
+/*Top style*/
+.detail-right-hat-container {
+	float: left;
+	display: inline-block;
+	position: relative;
+	width: 540px;
+	background-image: url("");
+	/* background-position: 182% 70%; */
+	background-position-x: 276px;
+	background-position-y: 52px;
+	background-repeat: no-repeat;
+	/* background-color: red; */
+	background-size: 56%;
+	height: 310px;
+	/* margin-top: 2%; */
+	padding: 20px;
+}
+
+/*Bottom style*/
+.detail-right-model-container {
+	background-color: white;
+	background-image: url("");
+	background-position: 44% 15%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 350px;
+	width: 284px;
+	float: right;
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	display: inline-block;
+}
+
+/*Left Version*/
+/*top style*/
+.detail-left-hat-container {
+	float: right;
+	display: block;
+	position: relative;
+	width: 549px;
+	background-image: url("");
+	/* background-position: 182% 70%; */
+	background-position-x: 207px;
+	background-position-y: 27px;
+	background-repeat: no-repeat;
+	/* background-color: red; */
+	background-size: 62%;
+	height: 310px;
+	/* margin-top: 2%; */
+	padding: 20px;
+}
+
+/*Bottom style*/
+.detail-left-model-container {
+	background-color: white;
+	background-image: url("");
+	background-position: 44% 15%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 350px;
+	width: 284px;
+	float: left;
+	position: relative;
+	margin: 0;
+	overflow: hidden;
+	display: inline-block;
+}
 
 
-/*Fix: How make addition to multiple items in the same list*/ 
 
-/*Fix: Can you spec a font size and then set borders relatively in ems?*/  
 
-/*Fix: Should I make put the photo of the guy (in the top-most container) in a div --
-any other suggestions for responsive aspect*/ 
 
-/*Fix: How can I make text scale too?*/ 
+/*Spring Sale************/
+.spring-sale {
+	
+	height: 250px;
+	width: 100%;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	color: black;
+	font-size: 2.5em;
+	text-align: center;
+	background-color:#70b865;
+	z-index: 1;
+	background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/green-background.jpg");
+	/*-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;*/
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: fixed;
+}
 
-/*Fix: How make background image overflow hidden?*/ 
+.spring-sale-big-type {
+	font-family: 'Lily Script One', cursive;
+	color: white;
+	font-size: 4em;
+	text-shadow: 3px 3px #000000;
+	/*text-decoration: underline;*/
+	 
+	 /*border-bottom: 1px solid black;
+	 border-spacing: 1px;*/
 
-/*Fix: make sure all sizes are percentages.*/ 
+}
 
-/*Fix: Do you have any tips for managing inheritance NO GOOD ANSWER-JUST OVER-RIGHT*/
+.hat-stack {
+	position: relative;
+	display: block;
+	height: 400px;
+	width: 200px;
+	margin: 0 auto;
+	margin-top: -400px;
+	z-index: 2;
+}
 
-/*Fix: My lower logo looks blurry.Brought in a 100% version (jpg-max) it looked blurry.*/
+.black-rule {
+	display: block;
+	height: 1px;
+	width: 400px;
+	margin: 0 auto;
+	position: relative;
+}
 
-/*Will an absolute or fixed position supercede all div positions and let everything float around it?*/ 
 
-/*I used an HTML break tag, though I thought you had said not to do it. I use it selectively for headers, not for bodies of text that might reflow and cause a forced break to look incorrect. It seemed a lot quicker than creating a span and associated class. Is this wrong? USE TWO SPANS THAT SURROUND TWO GROUPS OF TEXT AND SET AS BLOCK-*/
 
-/*HTML Div Tag: class="StyleA StyleB" can be very different than class="StyleB StyleA... right?" ONLY MATTERS IN STYLE SHEET*/ 
 
-/*My responsive divs seem a little clunky*/ 
 
-/*Gray rule style ok or is there a better way? FINE THE WAY I DID IT*/
+/*background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
-/*In my small-logo style, I glued down the aspect ratio by specing both the height and the width, but I did find that I could actually size both by just specing the width. NO WAY TO GLUE DOWN ASPECT RATIO*/
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.myBackground.jpg', sizingMethod='scale');
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='myBackground.jpg', sizingMethod='scale')";*/
 
-/*Is there a way to force open a div with a floating div*/
-
-/*Is there a way to scale text with width or height--both can be a problem NOT THAT I KNOW OF--BREAK POINTS*/
-
-/*What are standard screen pixel widths for media query breaks NO STANDARDS CHANGING TOO FAST--USE BOOTSTRAP*/
-
-/*My second gray rule is acted oddly... When I just surrounded the image with a div, the gray div didn't respect the block property of the div. It would work only work if I applied a class to the image itself*/
