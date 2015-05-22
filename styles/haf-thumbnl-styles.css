@@ -1,175 +1,378 @@
 .lower-container-1 {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 980px;
-    background-color: #dddddd;
-    height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 980px;
+	/*background-color: #dddddd;*/
+	height: 100%;
+	/*-webkit-box-shadow: 0px 0px 5px 5px rgba(30, 30, 30, 0.75);
+	-moz-box-shadow: 0px 0px 5px 5px rgba(30, 30, 30, 0.75);
+	box-shadow: 0px 0px 5px 5px rgba(30, 30, 30, 0.75);*/
+}
+
+.lower-container-outr-band {
+	width: 1000px;
+	background-color: rgb(79, 76, 76);
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+}
+
+.lower-container-outr-band2 {
+	width: 1010px;
+	background-color: #70b865;
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+}
+
+.lower-container-outr-band3 {
+	width: 1030px;
+	background-color: rgb(79, 76, 76);
+	height: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+	box-shadow: 0px 0px 15px 5px rgba(30, 30, 30, 0.75);
+}
+
+.thumbnail-1 {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 980px;
+	background-color: #898787; 
+	/*height: 198px;*/
+	padding-left: -15px;
+	padding-top: 25px;
 }
 
 .thumbnail-2 {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 880px;
-    background-color: white;
-    /*height: 400px;*/
-    top: 27px;
-    border-width: 15px;
-    border-color: white;
-    border-style: solid;
-    border-width: 1.2em;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 879px;
+	background-color: white;
+	/*height: 140px;*/
+	/*height: 400px;*/
+	/*top: 27px;*/
+	border-width: 15px;
+	border-color: white;
+	border-style: solid;
+	border-width: 1.2em;
 }
 
 .hat-name-thumb {
-    width: 879px;
-    height: 17px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    margin-bottom: .1em;
-    font-size: 1.1em;
+	width: 879px;
+	height: 17px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	margin-bottom: .1em;
+	font-size: 1.1em;	
 }
 
 .gray-rule3 {
-    position: relative;
-    background-color: #9d9e9f;
-    width: 879px;
-    height: 1px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: .4em;
+	position: relative;
+  	background-color: #9d9e9f;
+  	width: 879px;
+ 	height: 1px;
+ 	margin: 0 auto;
+  	display: block;
+  	margin-bottom: .4em;	
 }
 
 .gray-rule4 {
-    position: relative;
-    background-color: #B6B8BA;
-    height: 1px;
-    margin: 0 auto;
-    display: block;
-    margin-bottom: .4em;
+	position: relative;
+  	background-color: #B6B8BA;
+ 	height: 1px;
+ 	margin: 0 auto;
+  	display: block;
+  	margin-bottom: .4em;	
 }
 
 .thumb-inr3 {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 879px;
-    height: 135px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 879px;
+	height: 135px;
 }
 
 .thumb-pic {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 241px;
-    height: 135px;
-    float: left;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 241px;
+	height: 135px;
+	float: left;
 }
 
 .thumb-text {
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
-    width: 589px;
-    height: 109px;
-    float: left;
-    padding-left: 23px;
-    font-size: 1.2em;
-    line-height: 1.4;
-    padding-right: 25px;
-    background-color: rgb(101, 147, 94);
-    /* margin-top: 10px; */
-    padding-top: 26px;
-    color: white;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	width: 589px;
+	height: 109px;
+	float: left;
+	padding-left: 23px;
+	font-size: 1.2em;
+	line-height: 1.4;
+	padding-right: 25px;
+	background-color: rgb(101, 147, 94);
+	/* margin-top: 10px; */
+	padding-top: 26px;
+	color: white;
 }
 
 .thumb-text-float-right {
-    text-align: right:;
-    float: right;
-    color: rgb(166, 234, 154);
-    margin: 0 auto;
-    position: relative;
-    display: inline-block;
-    font-style: italic;
-    margin-top: .5em;
+	text-align: right;
+	float: right;
+	color: rgb(166, 234, 154);
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	margin-top: .5em;
 }
 
 .thumb-text-float-right a {
-    color: rgb(166, 234, 154);
+	color: rgb(166, 234, 154);
 }
 
 .thumb-text h2 {
-    color: #B6B8BA;
+	color: #B6B8BA;
 }
 
 .shadow {
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
 }
 
 .shadow2 {
-    -moz-box-shadow:    inset 0 0 30px #000000;
-    -webkit-box-shadow: inset 0 0 30px #000000;
-    box-shadow:         inset 0 0 30px #000000;
+   -moz-box-shadow:    inset 0 0 30px #000000;
+   -webkit-box-shadow: inset 0 0 30px #000000;
+   box-shadow:         inset 0 0 30px #000000;
 }
 
 .shadow-overlay {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 879px;
-    height: 135px;
-    margin-top: -135px;
-    -moz-box-shadow:    inset 0 0 10px #000000;
-    -webkit-box-shadow: inset 0 0 10px #000000;
-    box-shadow:         inset 0 0 10px #000000;
-}
-.shadow-overlay-sm1 {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    width: 879px;
-    height: 135px;
-    margin-top: -135px;
-    -moz-box-shadow:    inset 0 0 7px #000000;
-    -webkit-box-shadow: inset 0 0 7px #000000;
-    box-shadow:         inset 0 0 7px #000000;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 879px;
+	height: 135px;
+	margin-top: -135px;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
 }
 
-.white-block {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    height: 5px;
-    width: 980px;
-    background-color: white;
-    margin-top: 50px;
+.shadow-overlay-sm1 {
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	width: 879px;
+	height: 135px;
+	margin-top: -135px;
+	-moz-box-shadow:    inset 0 0 7px #000000;
+	-webkit-box-shadow: inset 0 0 7px #000000;
+	box-shadow:         inset 0 0 7px #000000;
+}
+
+.spacer-block {
+	height: 25px;
+	width: 980px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.dividing-line {
+	height: 5px;
+	width: 980px;
+	background-color: rgba(65, 65, 64, 0.75);
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	/* background-color: rgb(158, 156, 156);*/
+	top: 45px;
+	margin-left: -50px;
+}
+
+.link-to-detail2 {
+	text-align: right;
+	float: right;
+	color: rgb(166, 234, 154);
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	margin-top: -40px;
+	margin-right: 29px;]
+	font-size: 1.2em;
+}
+
+.gray-footer-block {
+	background-color: rgb(79, 76, 76);
+	display: block;
+	position: relative;
+	margin: 0 auto;=
+	width: 100%;
+	height: 20px;
 }
 
 .footer {
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    height: 50px;
-    width: 980px;
-    margin-top: 50px;
+	margin: 0 auto;
+	position: relative;
+	display: block;
+	height: 60px;
+	padding-top: 10px;
+	background-color: rgb(31, 107, 131);
+	width: 100%;
+	/*margin-top: 50px;*/
 }
 
 .footer-links {
-    height: 20px;
-    margin: 0 auto;
-    position: relative;
-    font-size:.85em;
-    color: #578695;
-    text-align: center; /*This was the only way to to align the text in the center-could center by controlling div*/
-    letter-spacing: 1.35px;
+	height: 20px;
+	margin: 0 auto;
+	position: relative;
+	font-size: 1em;
+	font-weight: bold;
+	text-align: center; /*This was the only way to to align the text in the center-could center by controlling div*/
+	letter-spacing: 1.35px;
+	margin-right: 5px;
+	margin-left: 5px;
+	display: block;
+}
+
+.footer-links a {
+	color: #7AABBB;
+	display: inline-block;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+
+
+/*Tests Below*/
+
+
+
+.link-to-detail2 {
+	text-align: right;
+	float: right;
+	color: rgb(166, 234, 154);
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+	font-style: italic;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: -40px;
+	margin-right: 30px;
+	font-size: 1em;
+	/*text-decoration: underline;*/
+}
+
+.link-to-detail2 a:after {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  border-width: 0px 0 .1em;
+  border-style: solid;
+}
+
+.link-to-detail2 a {
+	color: rgb(166, 234, 154);
+}
+
+.emphasized-thumb-text {
+	color: rgb(166, 234, 154);;
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+
+
+
+
+
+.animation {
+  top: -49px;
+  margin-right: 100px;
+  left: -300px;
+  width: 480px;
+  left: -200px;
+  height: 220px;
+  position: relative;
+  background-image: url("http://youtzdesign.com/clients-temp/hat-all-folks/images/spring-sale.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 5s;
+  animation-name: mymove;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: 1;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 1000px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+
+.purple-square {
+	background-color: purple;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.red-square {
+	background-color: red;
+	position: relative;
+	margin: 0 auto;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	float: left;
+}
+
+.top-text {
+	margin-left: 0;
+	margin-right: 0;
+	/*text-align: center;*/
+}
+
+.bottom-text {
+	bottom: 0;
+	right: 0;
 }
 
 .title {
-    color: #A9A9A9;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 25px;
+	color: #A9A9A9;
+	font-size: 30px;
+	font-weight: bold;
+	padding: 25px;
 }

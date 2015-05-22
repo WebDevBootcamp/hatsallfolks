@@ -32,7 +32,7 @@ function displayThumbnails()
   $.ajax(
   {
     type: "POST",
-    url: "thumbCall.php"
+    url: "scripts/php/thumbCall.php"
   }).done(function (ajaxReturn)
   {
     //console.log(ajaxReturn);
@@ -62,7 +62,7 @@ function displayDetail(id, listIndex)
     $.ajax(
     {
       type: "POST",
-      url: "detailCall.php",
+      url: "scripts/php/detailCall.php",
       data: "sku=" + id
     }).done(function (ajaxReturn)
     {
@@ -86,7 +86,7 @@ function displayDetail(id, listIndex)
     $.ajax(
     {
       type: "POST",
-      url: "detailCall.php",
+      url: "scripts/php/detailCall.php",
       data: "sku=" + id
     }).done(function (ajaxReturn)
     {
