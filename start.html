@@ -6,7 +6,7 @@
     <link rel="stylesheet" type="text/css" href="styles/haf-base-styles.css" /><!--Main Styles-Common to All-->
     <link rel="stylesheet" type="text/css" href="styles/haf-large-style.css" />
     <link rel="stylesheet" type="text/css" href="styles/haf-thumbnl-styles.css" />
-
+    <link rel="stylesheet" type="text/css" href="styles/popup.css" />
 
     <!--Fonts-->
     <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
@@ -18,8 +18,15 @@
     <!--Fonts-->
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <!--<script type="text/javascript" src="scripts/js/jquery-2.1.4.min.js"></script>-->
     <script type="text/javascript" src="ejs_0.9_alpha_1_developer.js"></script>
+    <script type="text/javascript" src="scripts/js/jquery.leanModal.min.js"></script>
     <script type="text/javascript" src="scripts/js/functions.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('#cart-call').leanModal({ top : 200, closeButton: ".modal_close" });
+        });
+    </script>
 
     <!--[if lt IE 9]>
     <script src="script/html5shiv.js"></script>
@@ -38,58 +45,92 @@
 
 </head>
 <body>
+
+<!--<p id="examples" class="section box">-->
+
+    <a id="cart-call" rel="leanModal" name="signup" href="#signup">Add To Cart</a>
+
+<!--</p>-->
+
+<!--<div id="signup">-->
+    <!--<div id="signup-ct">-->
+        <!--<div id="signup-header">-->
+            <!--<h2>My account</h2>-->
+            <!--<a class="modal_close" href="#"></a>-->
+        <!--</div>-->
+
+        <!--<form action="">-->
+
+            <!--<div class="txt-fld">-->
+                <!--<label for="">Username</label>-->
+                <!--<input id="" class="good_input" name="" type="text" />-->
+
+            <!--</div>-->
+            <!--<div class="txt-fld">-->
+                <!--<label for="">Email address</label>-->
+                <!--<input id="" name="" type="text" />-->
+            <!--</div>-->
+            <!--<div class="txt-fld">-->
+                <!--<label for="">Password</label>-->
+                <!--<input id="" name="" type="text" />-->
+
+            <!--</div>-->
+            <!--<div class="btn-fld">-->
+                <!--<button id="button_submit" type="submit">Sign Up</button>-->
+
+            <!--</div>-->
+        <!--</form>-->
+    <!--</div>-->
+<!--</div>-->
+
 <div class="container-wrap"> <!--Main Container Start-->
+  <!--Front Page start-->
+  <div class="gradient-reverse upper-gradient-container">
 
-
-
-
-    <!--Front Page start-->
-    <div class="gradient-reverse upper-gradient-container">
-
-        <div class="small-header-logo">
-            <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo-25percent.png" alt="" height="" width="" />
-        </div>
-
-        <div class="header-links">
-            <a href="#About HAF">About HAF</a>
-            <a href="#Shop">Shop</a>
-            <a href="#Blog">Blog</a>
-            <a href="#News">News</a>
-            <a href="#Jobs">Jobs</a>
-            <a href="#Contact Us">Contact Us</a>
-        </div>
-
+    <div class="small-header-logo">
+      <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo-25percent.png" alt="" height="" width="" />
     </div>
 
-    <div class="solid-blue">
+    <div class="header-links">
+      <a href="#About HAF">About HAF</a>
+      <a href="#Shop">Shop</a>
+      <a href="#Blog">Blog</a>
+      <a href="#News">News</a>
+      <a href="#Jobs">Jobs</a>
+      <a href="#Contact Us">Contact Us</a>
     </div>
 
-    <div class="main-white-container">
+  </div>
 
-        <!--<div class="centering-container">-->
+  <div class="solid-blue">
+  </div>
 
-        <div class="logo-slogan-container">
-          <div class="l-s-innerContainer">
-            <div class="haf-logo">
-              <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo.png" alt="" height="100%" width="100%" />
-            </div>
+  <div class="main-white-container">
+
+  <!--<div class="centering-container">-->
+
+    <div class="logo-slogan-container">
+      <div class="l-s-innerContainer">
+        <div class="haf-logo">
+          <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo.png" alt="" height="100%" width="100%" />
+         </div>
+
+         <div class="gray-rule">
+         </div>
+
+         <div class="slogan">
+           <h1> Comfort, Style, <br/><span class="hattitude"> Hat-itude</span></h1>
 
             <div class="gray-rule">
             </div>
 
-            <div class="slogan">
-              <h1> Comfort, Style, <br/><span class="hattitude"> Hat-itude</span></h1>
+            <span class="front-page-text">Hats All Folks has been serving no one for just about two weeks now. We attribute this success to poor planning and the lack of any hats. It's a tradition to which we're dedicated!</span>
 
-              <div class="gray-rule">
-              </div>
+        </div>
 
-              <span class="front-page-text">Hats All Folks has been serving no one for just about two weeks now. We attribute this success to poor planning and the lack of any hats. It's a tradition to which we're dedicated!</span>
+      </div><!--l-s-innerContainer End-->
 
-            </div>
-
-          </div><!--l-s-innerContainer End-->
-
-        </div><!--Logo-slogan-container End-->
+    </div><!--Logo-slogan-container End-->
 
         <div class="attitude-photo-container">
         </div>
@@ -150,14 +191,6 @@
   </div> <!-- Lower Container Outr Band2 End-->
 
 </div> <!-- Lower Container Outr Band End-->
-
-
-
-
-
-
-
-
 
 <!--Footer-Start-->
 

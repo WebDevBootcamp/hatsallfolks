@@ -10,6 +10,8 @@ $(document).ready(function()
     //alert(thumbnailSKU + " " + thumbnailIndex);
     //alert(this.id + " " + this.listindex);
     //alert(this.id);
+    //alert(".detail-link");
+    //alert(e);
     //alert($(this).attr("data-list-index"));
     //alert($(this).data("list-index"));
 
@@ -23,6 +25,27 @@ $(document).ready(function()
       displayDetail(thumbnailSKU, thumbnailIndex);
     }, 500, thumbnailSKU, thumbnailIndex);
 
+  });
+
+  $("#thumbnail-container").on("click", ".add-cart", function(e)
+  {
+    //alert(this.id);
+    //alert("add-cart");
+    //alert(e);
+    //alert($(this).data("list-index"));
+    //$('add-cart').leanModal({ top : 200, closeButton: ".modal_close" });
+    $("#cart-call").click();
+
+  });
+
+  $("#thumbnail-container").on("click", ".modal_close", function(e)
+  {
+    //alert(this.id);
+    //alert("add-cart");
+    //alert(e);
+    //alert($(this).data("list-index"));
+    //$('add-cart').leanModal({ top : 200, closeButton: ".modal_close" });
+    displayThumbnails();
   });
 
 });
