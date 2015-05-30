@@ -34,7 +34,7 @@ $(document).ready(function()
     //alert(e);
     //alert($(this).data("list-index"));
     //$('add-cart').leanModal({ top : 200, closeButton: ".modal_close" });
-    $("#cart-call").click();
+    //$("#cart-call").click();
 
   });
 
