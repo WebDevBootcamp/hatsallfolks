@@ -32,9 +32,49 @@ $(document).ready(function()
     //alert(this.id);
     //alert("add-cart");
     //alert(e);
+    //alert($("#hat_quantity").val());
+    //alert($("#hat_size").val());
+    //alert($("#hat_color").val());
+
+
     //alert($(this).data("list-index"));
     //$('add-cart').leanModal({ top : 200, closeButton: ".modal_close" });
     //$("#cart-call").click();
+
+    if ($("#hat_quantity").val() !== "" && $("#hat_size").val() !== "" && $("#hat_color").val() !== "")
+    {
+      if (docCookies.hasItem("hatCart"))
+      {
+        //alert("Has Hat Cart");
+        console.log(docCookies.getItem("hatCart"));
+
+        var hatCart = JSON.parse(docCookies.getItem("hatCart"));
+        //var hatCart = docCookies.getItem("hatCart");
+        console.log("Hat Cart: " + hatCart);
+
+        var jsonString = "'[";
+
+        hatCart.forEach(function (el, index)
+        {
+          jsonString  = jsonString + '{"sku" : "' + el.sku + '", "quantity" : "' + el.quantity + '", "size" : "' + el.size + '", "color" : "' + el.color + '"}, ';
+
+        });
+
+        console.log("JSON 1: " + jsonString);
+
+        jsonString = jsonString + '{"sku" : "' + $("#hat_sku").val() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]'
+
+        console.log("JSON 2: " + jsonString);
+
+        alert("Has Hat Cart");
+      }
+      else
+      {
+        alert("Doesn't Have Hat Cart");
+
+      }
+
+    }
 
   });
 

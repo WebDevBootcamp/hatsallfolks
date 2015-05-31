@@ -4,6 +4,7 @@
 //    var idIndex="thumbnail" + index;
 //    alert("Starting left detail");
 //    console.log(el, index);
+//  var hatSKU = el.sku;
 %>
 
 <!--Details Blue Start-->
@@ -96,15 +97,17 @@
   <div class="form-container">
     <div class="center">
       <form>
+        <input id="hat_sku"  value=<%= el.sku %> hidden  type="text" name="hat_sku"/>
+
         <div class="color-qty-size less-margin">
           <span class="right-margin">Quantity:</span>
-          <input type="number" name="quantity" required>
+          <input id="hat_quantity" type="number" name="quantity" required>
 
         </div>
 
         <div class="color-qty-size">
           <span class="right-margin">Size:</span>
-          <select name="size" required>
+          <select id="hat_size" name="size" required>
             <option value="" selected="selected"></option>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
@@ -117,7 +120,7 @@
 
         <div class="color-qty-size">
           <span class="right-margin">Color:</span>
-          <select name="color-choice" required>
+          <select id="hat_color" name="color-choice" required>
             <option value="" selected="selected"></option>
             <option value="White">White</option>
             <option value="Black">Black</option>
@@ -129,7 +132,7 @@
         </div>
 
         <div class="color-qty-size">
-          <input type="submit" value=" Add to Cart ">
+          <input class="add-cart" type="submit" value=" Add to Cart ">
 
         </div>
 

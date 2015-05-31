@@ -4,71 +4,75 @@
 
 
 
+
 %>
 
 <!--Details Gray Start-->
 <div class="hat-details-container gradient-gray shadow2">
+  <!--White Containter Start-->
+  <div class="hat-details-white-container">
+    <!--<img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/product-page-rough.1.jpg" alt="" height="" width="" />-->
+    <!--Left Container Start -->
+    <div class="detail-right-hat-container">
+      <!--Hat Logo (small) Start-->
+      <div class="hat-details-logo">
+        <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo.png" alt="" height="100%" width="100%" />
+      </div>
+      <!--Hat Logo (small) End-->
 
-    <!--White Containter Start-->
-    <div class="hat-details-white-container">
+      <div class="gray-rule2">
+      </div>
 
-        <!--<img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/product-page-rough.1.jpg" alt="" height="" width="" />-->
+      <!--Text Start-->
+      <div class="hat-details-text">
+        <h2><%= el.product %></h2>
+        <p>
+          <%= el.detail %>
+        </p>
 
-        <!--Left Container Start -->
-        <div class="detail-right-hat-container">
+        <p>
+          <span class="hat-details-price">
+		  <%= el.price %></span>
 
-            <!--Hat Logo (small) Start-->
-            <div class="hat-details-logo">
-                <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo.png" alt="" height="100%" width="100%" />
-            </div>
-            <!--Hat Logo (small) End-->
+        </p>
 
-            <div class="gray-rule2">
-            </div>
-
-            <!--Text Start-->
-            <div class="hat-details-text">
-                <h2><%= el.product %></h2>
-                <p>
-                    <%= el.detail %>
-                </p>
-                <p><span class="hat-details-price">
-					<%= el.price %></span></p>
-            </div>
-            <!--Text End-->
-
-        </div>
-
-        <!--<div class="hat-shadow-image">
-            <img src="http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-shadow.jpg" height="100%" width="100%" />
-        </div>-->
-
-        <!--Left Container End -->
-
-        <!-- Hat Pic Start-->
-        <div class="detail-right-model-container">
-            <!--<img class="hat-details-right-image" src="http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-guy-120.jpg">-->
-        </div>
-        <!-- Hat Pic End-->
-
-        <div class="clear">
-        </div>
+      </div>
+      <!--Text End-->
 
     </div>
+
+    <!--<div class="hat-shadow-image">
+      <img src="http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-shadow.jpg" height="100%" width="100%" />
+    </div>-->
+
+    <!--Left Container End -->
+
+    <!-- Hat Pic Start-->
+    <div class="detail-right-model-container">
+      <!--<img class="hat-details-right-image" src="http://youtzdesign.com/clients-temp/hat-all-folks/images/brixton-hat-guy-120.jpg">-->
+    </div>
+    <!-- Hat Pic End-->
+
+    <div class="clear">
+    </div>
+
+  </div>
     <!--White Containter End-->
-    <!--Form Start-->
+  <!--Form Start-->
   <div class="form-container">
     <div class="center">
       <form>
+        <input id="hat_sku"  value=<%= el.sku %> hidden  type="text" name="hat_sku"/>
+
         <div class="color-qty-size less-margin">
           <span class="right-margin">Quantity:</span>
-          <input type="number" name="quantity" required>
+          <input id="hat_quantity" type="number" name="quantity" required>
 
         </div>
 
         <div class="color-qty-size">
           <span class="right-margin">Size:</span>
-          <select name="size" required>
+          <select id="hat_size" name="size" required>
             <option value="" selected="selected"></option>
             <option value="Small">Small</option>
             <option value="Medium">Medium</option>
@@ -81,7 +85,7 @@
 
         <div class="color-qty-size">
           <span class="right-margin">Color:</span>
-          <select name="color-choice" required>
+          <select id="hat_color" name="color-choice" required>
             <option value="" selected="selected"></option>
             <option value="White">White</option>
             <option value="Black">Black</option>
@@ -92,17 +96,17 @@
 
         </div>
 
-      <div class="color-qty-size">
-        <input type="submit" value=" Add to Cart ">
+        <div class="color-qty-size">
+          <input class="add-cart" type="submit" value=" Add to Cart ">
 
-      </div>
+        </div>
 
-    </form>
+      </form>
+
+    </div>
 
   </div>
-
-</div>
-    <!--Form End-->
+  <!--Form End-->
 
 </div>
 <!--Details Gray End-->
