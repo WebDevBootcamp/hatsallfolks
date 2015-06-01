@@ -472,6 +472,21 @@ h2 {
 	/*margin-top: 50px;*/
 }
 
+.close
+{
+  position: absolute;
+	right: 30px;
+	top: 17px;
+
+}
+
+.close_icon
+{
+  height: 150%;
+	width: 150%;
+
+}
+
 .hat-details-white-container {
 	background-color: white;
 	/*z-index: 1;*/

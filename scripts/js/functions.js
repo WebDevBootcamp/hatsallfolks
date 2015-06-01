@@ -29,11 +29,11 @@ $(document).ready(function()
 
   $("#thumbnail-container").on("click", ".add-cart", function(event)
   {
-    event.preventDefault();
-    event.stopPropagation();
-
     if ($("#hat_quantity").val() !== "" && $("#hat_size").val() !== "" && $("#hat_color").val() !== "")
     {
+      event.preventDefault();
+      event.stopPropagation();
+
       if (docCookies.hasItem("hatCart"))
       {
         var cartCookie = docCookies.getItem("hatCart");
@@ -52,6 +52,12 @@ $(document).ready(function()
       displayThumbnails();
 
     }
+
+  });
+
+  $("#thumbnail-container").on("click", ".close", function(event)
+  {
+    displayThumbnails();
 
   });
 
