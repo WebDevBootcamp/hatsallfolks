@@ -5,7 +5,7 @@
 //    $sku = "01-12345-01";  // ONLY USE THIS FOR TESTING. ONCE ALL IS WORKING, REMOVE THIS LINE PLEASE
 
     // QUERY DB FOR THE SKU RECEIVED FROM THE POST REQUEST
-    $sql = "SELECT sku, product, detail, price FROM Inventory WHERE sku='$sku'";
+    $sql = "SELECT sku, product, detail, price FROM Inventory WHERE sku='$sku' AND color='' AND size=''";
     $result = $conn->query($sql);
 
 
