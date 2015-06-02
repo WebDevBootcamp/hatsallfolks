@@ -36,9 +36,16 @@ $(document).ready(function()
 
       if (docCookies.hasItem("hatCart"))
       {
+        //alert("Cart");
         var cartCookie = docCookies.getItem("hatCart");
-        cartCookie = cartCookie.replace("]", ', {"sku" : "' + $("#hat_sku").val() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "price" : "' + $(".hat-details-price").text().trim() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]');
-        docCookies.setItem("hatCart", cartCookie, 172800);
+        //console.log("Cart Cookie: " + cartCookie);
+
+        cartCookie = cartCookie.replace("]", ', {"sku" : "' + $("#hat_sku").val() + '", "product" : "' + $(".hat-details-text h2").text() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "price" : "' + $(".hat-details-price").text().trim() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]');
+        docCookies.setItem("hatCart", cartCookie, 172800, "/");
+
+        //console.log("Hat Cart: " + JSON.parse(docCookies.getItem("hatCart")));
+
+
 
         //console.log(cartCookie);
         //alert("Cart");
@@ -46,8 +53,8 @@ $(document).ready(function()
       }
       else
       {
-        var cartCookie = '[{"sku" : "' + $("#hat_sku").val() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "price" : "' + $(".hat-details-price").text().trim() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]';
-        docCookies.setItem("hatCart", cartCookie, 172800);
+        var cartCookie = '[{"sku" : "' + $("#hat_sku").val() + '", "product" : "' + $(".hat-details-text h2").text() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "price" : "' + $(".hat-details-price").text().trim() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]';
+        docCookies.setItem("hatCart", cartCookie, 172800, "/");
 
         //console.log(cartCookie);
         //alert("No Cart");

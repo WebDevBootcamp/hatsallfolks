@@ -1,0 +1,47 @@
+<div  class="main-white-container">
+  <div class="title">Hats-All-Folks Shopping Cart</div>
+
+  <!-- BUILD BASIC TABLE OF ITEMS PURCHASED FOR SHOPPING CART -->
+  <table class="table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>PRODUCT</th>
+        <th>COLOR</th>
+        <th>SIZE</th>
+        <th>AMOUNT</th>
+        <th>UNIT PRICE</th>
+        <th>TOTAL</th>
+
+      </tr>
+
+    </thead>
+
+    <tbody>
+      <% items.forEach(function(el,index)
+      {
+        var total = el.quantity * el.price;
+        var source = "images/thumb/" + el.sku + ".jpg";
+//        console.log("quantity : " + el.quantity);
+//        console.log("price : " + el.price)
+//        console.log("total : " + total);
+
+      %>
+        <tr>
+          <td><img src=<%= source %> </td>
+          <td> <%= el.product %> </td>
+          <td> <%= el.color %> </td>
+          <td> <%= el.size %> </td>
+          <td> <%= el.quantity %> </td>
+          <td> <%= el.price %> </td>
+          <td> <%= total %> </td>
+
+        </tr>
+
+      <% });  %>
+
+    </tbody>
+
+  </table>
+
+</div>
