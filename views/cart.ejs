@@ -18,10 +18,10 @@
     </thead>
 
     <tbody>
-      <% items.forEach(function(el,index)
+      <% items.forEach(function(element,index)
       {
-        var total = el.quantity * el.price;
-        var source = "images/thumb/" + el.sku + ".jpg";
+        var total = element.quantity * element.price;
+        var source = "images/thumb/" + element.sku + ".jpg";
 //        console.log("quantity : " + el.quantity);
 //        console.log("price : " + el.price)
 //        console.log("total : " + total);
@@ -29,12 +29,13 @@
       %>
         <tr>
           <td><img src=<%= source %> </td>
-          <td> <%= el.product %> </td>
-          <td> <%= el.color %> </td>
-          <td> <%= el.size %> </td>
-          <td> <%= el.quantity %> </td>
-          <td> <%= el.price %> </td>
-          <td> <%= total %> </td>
+          <td> <%= element.product %>     </td>
+          <td> <%= element.color %>       </td>
+          <td> <%= element.size %>        </td>
+          <td> <%= element.quantity %>    </td>
+          <td> <%= element.price %>       </td>
+          <td> <%= total %>          </td>
+          <td> <div style="cursor:pointer" class="delete_item" data-item_id=<%= element.sku %> data-item_index=<%= index %> > Delete </div> </td>
 
         </tr>
 
