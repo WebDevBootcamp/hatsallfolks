@@ -5,8 +5,41 @@ $(document).ready(function()
 {
   displayItems();
 
+  $("#cart_container").on("click", "#order_button", function(event)
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    $("#cart-call").leanModal({top: 200, closeButton: ".modal_close"});
+    $("#cart-call").click();
+
+  });
+
+  $("form").on("submit", function(event)
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    //var cart = docCookies.getItem("hatCart", "/");
+
+    //console.log($(this).serialize());
+
+    var order=$("#cust_info").serialize() + "&items=" + docCookies.getItem("hatCart", "/");
+
+    $.ajax(
+      {
+        type: "POST",
+        url: "addOrder.php",
+        data: "order=" + order
+      }).done(function (ajaxReturn)
+      {
+        var items = JSON.parse(ajaxReturn);
+      });
+
+  });
+
   $("#cart_container").on("click", ".delete_item", function(event)
   {
+    event.preventDefault();
+    event.stopPropagation();
     var removeItem = $(this).data("item_index");
     var cartCookie = docCookies.getItem("hatCart", "/");
     var items = JSON.parse(cartCookie);
@@ -53,3 +86,4 @@ function displayItems()
   var html = new EJS({url: "views/cart.ejs"}).render({items: items});
   $("#cart_container").html(html);
 }
+
