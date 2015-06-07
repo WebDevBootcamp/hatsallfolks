@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
+  <head lang="en">
     <meta charset="UTF-8">
     <title>::H.A.F::</title>
     <link rel="stylesheet" type="text/css" href="styles/haf-base-styles.css" /><!--Main Styles-Common to All-->
     <link rel="stylesheet" type="text/css" href="styles/haf-large-style.css" />
     <link rel="stylesheet" type="text/css" href="styles/haf-thumbnl-styles.css" />
     <link rel="stylesheet" type="text/css" href="styles/tables.css">
+    <link rel="stylesheet" type="text/css" href="styles/popup.css">
     <!-- OVERRIDE MAIN-WHITE-CONTAINER CLASS HEIGHT FOR THIS PAGE ONLY TO FIX FOOTER POSITIONING -->
     <style type="text/css">
-        .main-white-container {
-            height: auto
-        }
+      .main-white-container
+      {
+        height: auto
+      }
     </style>
 
     <!--Fonts-->
@@ -24,8 +26,16 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="ejs_0.9_alpha_1_developer.js"></script>
     <!--<script type="text/javascript" src="scripts/js/functions.js"></script>-->
+    <script type="text/javascript" src="scripts/js/jquery.leanModal.min.js"></script>
     <script type="text/javascript" src="scripts/js/cookies.js"></script>
     <script type="text/javascript" src="scripts/js/cart.js"></script>
+
+    <!--<script type="text/javascript">-->
+      <!--$(function()-->
+      <!--{-->
+        <!--$('#cart-call').leanModal({ top : 200, closeButton: ".modal_close" });-->
+      <!--});-->
+<!--//    </script>-->
 
     <!--[if lt IE 9]>
     <script src="script/html5shiv.js"></script>
@@ -34,17 +44,18 @@
     <!--gradient over-ride-->
     <!--[if gte IE 9]>
     <style type="text/css">
-        .gradient {
-            filter: none;
-        }
+      .gradient
+      {
+        filter: none;
+      }
     </style>
     <![endif]-->
-</head>
+  </head>
 
-<body>
-<div class="container-wrap"> <!--Main Container Start-->
-    <!--Front Page start-->
-    <div class="gradient-reverse upper-gradient-container">
+  <body>
+    <div class="container-wrap"> <!--Main Container Start-->
+      <!--Front Page start-->
+      <div class="gradient-reverse upper-gradient-container">
         <div class="small-header-logo">
             <img src="http://www.youtzdesign.com/clients-temp/hat-all-folks/images/haf-logo-25percent.png" alt="" height="" width="" />
         </div>
@@ -56,19 +67,75 @@
             <a href="#News">News</a>
             <a href="#Jobs">Jobs</a>
             <a href="#Contact Us">Contact Us</a>
-        </div>
-
-    </div>
-
-    <div class="solid-blue">
-    </div>
-
-
-        <div id="cart_container">
 
         </div>
 
-</div><!--Main Container End-->
+      </div>
+
+      <div class="solid-blue">
+      </div>
+
+    <a id="cart-call" rel="leanModal" name="signup" href="#signup">Add To Cart</a>
+
+    <div id="signup">
+      <div id="signup-ct">
+        <div id="signup-header">
+          <h2>Customer Info</h2>
+          <a class="modal_close" href="#"></a>
+        </div>
+
+        <form id="cust_info" method="" action="">
+          <div class="txt-fld">
+            <label for="">First Name</label>
+            <input id="" class="" name="first_name" type="text" required/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">Last Name</label>
+            <input id="" name="last_name" type="text" required/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">Street Address 1</label>
+            <input id="" name="address_1" type="text" required/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">Street Address 2</label>
+            <input id="" name="address_2" type="text"/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">City</label>
+            <input id="" name="city" type="text" required/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">State</label>
+            <input id="" name="state" type="text" required/>
+          </div>
+
+          <div class="txt-fld">
+            <label for="">E-mail</label>
+            <input id="" name="email" type="text" required/>
+          </div>
+
+          <div class="btn-fld">
+            <button id="button_submit" type="submit">Submit</button>
+
+          </div>
+
+        </form>
+
+      </div>
+
+    </div>
+
+
+    <div id="cart_container">
+    </div>
+
+  </div><!--Main Container End-->
     <!--<div class="clear"></div>-->
     <!--&lt;!&ndash;Main White Container End&ndash;&gt;-->
 

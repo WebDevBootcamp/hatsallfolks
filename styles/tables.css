@@ -127,3 +127,39 @@ th {
 .scheduled {
     background: #C3C3C3;
 }
+
+#order_button
+{
+  cursor: pointer;
+  position: absolute;
+  top: 28px;
+  right: 72px;
+  height: 36px;
+  width: 70px;
+  border-radius: 5px;
+  color: white;
+  background-color: #A9A9A9;
+}
+
+.delete_item
+{
+  cursor: pointer;
+}
+
+#cart-call
+{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#button_submit
+{
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    color: white;
+    background-color: #A9A9A9;
+}
