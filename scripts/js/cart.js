@@ -18,21 +18,33 @@ $(document).ready(function()
   {
     event.preventDefault();
     event.stopPropagation();
+    //alert("Submit");
     //var cart = docCookies.getItem("hatCart", "/");
 
     //console.log($(this).serialize());
 
-    var order=$("#cust_info").serialize() + "&items=" + docCookies.getItem("hatCart", "/");
+    //var items = docCookies.getItem("hatCart", "/");
+    //items = items.replace(" ", "+");
 
+    var order=$("#cust_info").serialize() + "&items=" + encodeURIComponent(docCookies.getItem("hatCart", "/"));
+    //console.log(order);
+    //console.log(decodeURIComponent(order));
     $.ajax(
       {
         type: "POST",
-        url: "addOrder.php",
-        data: "order=" + order
+        url: "scripts/php/addOrder.php",
+        data: order
       }).done(function (ajaxReturn)
       {
-        var items = JSON.parse(ajaxReturn);
+        //console.log(ajaxReturn);
+        //var items = JSON.parse(ajaxReturn);
+
       });
+
+    $(".modal_close").click();
+    $("#cart_container").html("");
+    window.close();
+    docCookies.removeItem("hatCart", "/");
 
   });
 

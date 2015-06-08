@@ -12,7 +12,39 @@ function db_connect(){
     }
     return $conn;
 }
-function db_close($conn){
+function db_close($conn)
+{
   mysqli_close($conn);
 }
+
+function pdoOpen()
+{
+  $dsn      = "mysql:dbname=hatsall;host=weblab.us";
+  $username = "hatsall";
+  $password = "hatsa!!";
+//$username = "root";
+//$password = "weblab2015";
+
+  try
+  {
+    $dbh = new PDO($dsn, $username, $password);
+  }
+  catch (PDOException $event)
+  {
+    print "Error!: " . $event->getMessage() . "<br/>";
+    die();
+
+  }
+
+  return $dbh;
+
+}
+
+function pdoClose($dbh)
+{
+    $dbh->query("SELECT pg_terminate_backend(pg_backend_pid());");
+    $dbh = null;
+}
+
 ?>
+
