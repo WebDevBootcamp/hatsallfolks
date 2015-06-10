@@ -64,7 +64,16 @@ $(document).ready(function()
   {
     event.preventDefault();
     event.stopPropagation();
-    cartTab = window.open("cart.html");
+
+    var cartText = $("#cart_open").text();
+    var cartNumber = cartText.substring(cartText.indexOf(":") + 2, cartText.length);
+
+    //var cartNumber = cartText.substring(indexOfSemicolon + 2, cartText.length);
+
+    if(Number(cartNumber) > 0)
+    {
+      cartTab = window.open("cart.html");
+    }
     //setTimeout( function()
     //{cartTab.focus()
     //  alert("Focus Cart");
@@ -125,12 +134,13 @@ $(document).ready(function()
 
 
       var cartText = $("#cart_open").text();
-      var indexOfZero = cartText.indexOf("0");
-      if(indexOfZero === -1)
+      var cartNumber = cartText.substring(cartText.indexOf(":") + 2, cartText.length);
+
+      //var cartNumber = cartText.substring(indexOfSemicolon + 2, cartText.length);
+
+      if(Number(cartNumber) > 0)
       {
         /*Get the number of hats already on order.*/
-        var indexOfSemicolon = cartText.indexOf(":");
-        var cartNumber = cartText.substring(indexOfSemicolon + 2, cartText.length);
 
         //var cart = localStorage.getItem("cartItems");
         //cart = Number(cart) + Number($("#hat_quantity").val());
