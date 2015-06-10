@@ -1,6 +1,39 @@
 $(document).ready(function()
 {
   displayThumbnails();
+  var cartTab;
+
+  if(docCookies.hasItem("hatCart", "/"))
+  {
+    /*If there is a shopping cart, count the total number of hats in it and display the number.*/
+    var numberOfItems = 0;
+    var items = JSON.parse(docCookies.getItem("hatCart", "/"));
+
+    items.forEach( function(element,index)
+    {
+      numberOfItems = Number(numberOfItems) + Number(items[index].quantity);
+
+    });
+
+    //localStorage.setItem("cartItems", numberOfItems);
+
+    $("#cart_open").text("Cart: " + numberOfItems);
+
+    //alert("Cookie");
+  }
+  else
+  {
+    /*Display no hats in cart.*/
+    //localStorage.setItem("cartItems", "0");
+    $("#cart_open").text("Cart: 0");
+    //alert("No Cookie");
+  }
+
+  //addEvent(window, "storage", function(event)
+  //{
+  //  alert("Storage");
+  //});
+
 
   $("#thumbnail-container").on("click", ".detail-link", function(event)
   {
@@ -27,6 +60,21 @@ $(document).ready(function()
 
   });
 
+  $(".header-links").on("click", "#cart_open", function(event)
+  {
+    event.preventDefault();
+    event.stopPropagation();
+    cartTab = window.open("cart.html");
+    //setTimeout( function()
+    //{cartTab.focus()
+    //  alert("Focus Cart");
+
+    //}, 6000);
+    //cartTab.focus();
+    //alert("Open Cart");
+    //alert(cartTab);
+  });
+
   $("#thumbnail-container").on("click", ".add-cart", function(event)
   {
     if ($("#hat_quantity").val() !== "" && $("#hat_size").val() !== "" && $("#hat_color").val() !== "")
@@ -36,6 +84,7 @@ $(document).ready(function()
 
       if (docCookies.hasItem("hatCart"))
       {
+        /*If there is a shopping cart, add another item to it.*/ 
         //alert("Cart");
         var cartCookie = docCookies.getItem("hatCart");
         //console.log("Cart Cookie: " + cartCookie);
@@ -53,6 +102,7 @@ $(document).ready(function()
       }
       else
       {
+        /*Create a cart and add an item to it.*/
         var cartCookie = '[{"sku" : "' + $("#hat_sku").val() + '", "product" : "' + $(".hat-details-text h2").text() + '", "quantity" : "' +   $("#hat_quantity").val() + '", "price" : "' + $(".hat-details-price").text().trim() + '", "size" : "' +   $("#hat_size").val() + '", "color" : "' +   $("#hat_color").val() + '"}]';
         docCookies.setItem("hatCart", cartCookie, 172800, "/");
 
@@ -61,7 +111,61 @@ $(document).ready(function()
 
       }
 
+      //if(localStorage.getItem("cartItems") === "0")
+      //{
+      //  localStorage.setItem("cartItems", "1");
+      //  console.log(localStorage.getItem("cartItems"));
+      //}
+      //else
+      //{
+      /*Get the number of hats already on order.*/
+      //var cartAnchor = $("#cart_open").text;
+      //console.log(cartAnchor);
+
+
+
+      var cartText = $("#cart_open").text();
+      var indexOfZero = cartText.indexOf("0");
+      if(indexOfZero === -1)
+      {
+        /*Get the number of hats already on order.*/
+        var indexOfSemicolon = cartText.indexOf(":");
+        var cartNumber = cartText.substring(indexOfSemicolon + 2, cartText.length);
+
+        //var cart = localStorage.getItem("cartItems");
+        //cart = Number(cart) + Number($("#hat_quantity").val());
+        //localStorage.setItem("cartItems", cart);
+        //console.log(localStorage.getItem("cartItems"));
+        //}
+
+        /*Add the number of new hats to the number of hats already on order and display it.*/
+        $("#cart_open").text("Cart: " + (Number(cartNumber) + Number($("#hat_quantity").val())));
+      }
+      else
+      {
+        $("#cart_open").text("Cart: " + $("#hat_quantity").val());
+      }
+
       displayThumbnails();
+
+      //if(typeof cartTab !== "undefined")
+      //{
+      try
+      {
+        /*Close the cart if it is open.*/
+        cartTab.close();
+      }
+      catch(error)
+      {
+
+      }
+        // alert("Cart");
+      //}
+      //else
+      //{
+        //alert("No Cart");
+
+      //}
 
     }
 
